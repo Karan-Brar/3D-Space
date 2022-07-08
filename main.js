@@ -49,17 +49,17 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("/images/space.jpg");
 scene.background = spaceTexture;
 
-const dogeTexture = new THREE.TextureLoader().load("doge.jpg");
+const dogeTexture = new THREE.TextureLoader().load("/images/doge.jpg");
 
 const dogeCube = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
   new THREE.MeshStandardMaterial({ map: dogeTexture })
 )
 
-const marsTexture = new THREE.TextureLoader().load("mars.jpg");
+const marsTexture = new THREE.TextureLoader().load("/images/mars.jpg");
 
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
